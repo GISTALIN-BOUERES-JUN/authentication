@@ -3,6 +3,7 @@ import { apiResolver } from 'next/dist/next-server/server/api-utils';
 import { parseCookies, setCookie } from 'nookies'
 
 let cookies = parseCookies()
+let isRefreshing = false;
 
 export const api = axios.create({
     baseURL: 'http://localhost:3333',

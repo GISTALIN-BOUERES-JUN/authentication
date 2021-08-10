@@ -10,6 +10,7 @@ export default function Home() {
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
+
     const data = {
       email,
       password,
